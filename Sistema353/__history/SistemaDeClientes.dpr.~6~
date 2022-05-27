@@ -1,0 +1,18 @@
+program SistemaDeClientes;
+
+uses
+  Vcl.Forms,
+  U_principal in 'fontes\U_principal.pas' {frm_principal},
+  U_DM in 'U_DM.pas' {DataModule1: TDataModule},
+  Unit2 in 'C:\3-5\Sistemas\Fonts\Unit2.pas' {DataModule2: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(Tfrm_principal, frm_principal);
+  Application.CreateForm(TDataModule1, DataModule1);
+  Application.CreateForm(TDataModule2, DataModule2);
+  Application.Run;
+end.

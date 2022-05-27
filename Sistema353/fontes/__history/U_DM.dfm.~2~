@@ -1,0 +1,25 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  OnCreate = driverDriverCreated
+  Height = 576
+  Width = 730
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=sistema353'
+      'User_Name=root'
+      'DriverID=MySQL')
+    Left = 120
+    Top = 96
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    Left = 112
+    Top = 200
+  end
+  object driver: TFDPhysMySQLDriverLink
+    VendorLib = 'C:\3-53\Arthur_vini\Sistema353\lib\libmySQL (1).dll'
+    OnDriverCreated = driverDriverCreated
+    Left = 112
+    Top = 320
+  end
+end

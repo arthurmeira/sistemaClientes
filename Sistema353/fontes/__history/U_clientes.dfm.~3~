@@ -1,0 +1,174 @@
+object frm_cad_clientes: Tfrm_cad_clientes
+  Left = 0
+  Top = 0
+  Caption = 'Cadastro de clientes'
+  ClientHeight = 550
+  ClientWidth = 930
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Cadastro: TPageControl
+    Left = 0
+    Top = 0
+    Width = 930
+    Height = 550
+    ActivePage = tb_cadastro
+    Align = alClient
+    TabOrder = 0
+    ExplicitWidth = 907
+    ExplicitHeight = 603
+    object tb_cadastro: TTabSheet
+      Caption = 'Cadastro'
+      ExplicitWidth = 920
+      ExplicitHeight = 497
+      object txt_nome: TDBEdit
+        Left = 56
+        Top = 40
+        Width = 121
+        Height = 21
+        TabOrder = 0
+      end
+      object cb_uf: TDBComboBox
+        Left = 240
+        Top = 86
+        Width = 65
+        Height = 21
+        Items.Strings = (
+          'Acre - AC'
+          'Alagoas - AL'
+          'Amap'#225' - AP'
+          'Amazonas - AM'
+          'Bahia - BA'
+          'Cear'#225' - CE'
+          'Distrito Federal - DF'
+          'Esp'#237'rito Santo -  ES'
+          'Goi'#225's - GO'
+          'Maranh'#227'o - MA'
+          'Mato Grosso - MT'
+          'Mato Grosso do Sul'#9'- MS'
+          'Minas Gerais - MG'
+          'Par'#225' - PA'
+          'Para'#237'ba - PB'
+          'Paran'#225' - PR'
+          'Pernambuco - PE'
+          'Piau'#237' - PI'
+          'Rio de Janeiro - RJ'
+          'Rio Grande do Norte - RN'
+          'Rio Grande do Sul  - RS'
+          'Rond'#244'nia - RO'
+          'Roraima - RR'
+          'Santa Catarina - SC'
+          'S'#227'o Paulo - SP'
+          'Sergipe - SE'
+          'Tocantins'#9'- TO')
+        TabOrder = 1
+      end
+      object txt_endereco: TDBEdit
+        Left = 240
+        Top = 40
+        Width = 121
+        Height = 21
+        TabOrder = 2
+      end
+      object txt_bairro: TDBEdit
+        Left = 432
+        Top = 40
+        Width = 121
+        Height = 21
+        TabOrder = 3
+      end
+      object txt_cidade: TDBEdit
+        Left = 56
+        Top = 86
+        Width = 121
+        Height = 21
+        TabOrder = 4
+      end
+      object txt_cep: TDBEdit
+        Left = 432
+        Top = 86
+        Width = 121
+        Height = 21
+        TabOrder = 5
+      end
+      object txt_rg: TDBEdit
+        Left = 56
+        Top = 134
+        Width = 121
+        Height = 21
+        TabOrder = 6
+      end
+      object txt_telefone: TDBEdit
+        Left = 56
+        Top = 183
+        Width = 121
+        Height = 21
+        TabOrder = 7
+      end
+      object txt_cpf: TDBEdit
+        Left = 240
+        Top = 134
+        Width = 121
+        Height = 21
+        TabOrder = 8
+      end
+      object txt_celular: TDBEdit
+        Left = 240
+        Top = 183
+        Width = 121
+        Height = 21
+        TabOrder = 9
+      end
+      object txt_email: TDBEdit
+        Left = 432
+        Top = 183
+        Width = 121
+        Height = 21
+        TabOrder = 10
+      end
+      object txt_dtNascimento: TDBEdit
+        Left = 56
+        Top = 235
+        Width = 121
+        Height = 21
+        TabOrder = 11
+      end
+      object txt_dtCad: TDBEdit
+        Left = 240
+        Top = 235
+        Width = 121
+        Height = 21
+        TabOrder = 12
+      end
+      object cb_situacao: TDBComboBox
+        Left = 432
+        Top = 235
+        Width = 81
+        Height = 21
+        Items.Strings = (
+          'Ativo'
+          'Inativo')
+        TabOrder = 13
+      end
+      object txt_id: TDBEdit
+        Left = 56
+        Top = 3
+        Width = 121
+        Height = 21
+        TabOrder = 14
+      end
+    end
+    object tb_consulta: TTabSheet
+      Caption = 'Consulta'
+      ImageIndex = 1
+      ExplicitWidth = 899
+      ExplicitHeight = 575
+    end
+  end
+end
