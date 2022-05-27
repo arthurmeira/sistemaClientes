@@ -1,2 +1,2 @@
 # sistemaClientes
-Sistema de cadastro de clientes, para este projeto esta sendo utilizado Delphi.  
+Sistema de cadastro de clientes. Tech da vez ---- DELPHI
