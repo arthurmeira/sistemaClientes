@@ -1,2 +1,2 @@
 # sistemaClientes
-Sistema de cadastro de clientes. Tech = DELPHI
+Sistema de cadastro de clientes. Tecnologia utilizada no desenvolvimento -> DELPHI
