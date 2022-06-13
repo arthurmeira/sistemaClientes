@@ -5,9 +5,10 @@ object DataModule1: TDataModule1
   Width = 877
   object FDConnection1: TFDConnection
     Params.Strings = (
-      'Database=sistemaclientes'
+      'Database=sistema353'
       'User_Name=root'
       'DriverID=MySQL')
+    Connected = True
     Left = 160
     Top = 88
   end
@@ -44,6 +45,7 @@ object DataModule1: TDataModule1
       FieldName = 'cli_rg'
       Origin = 'cli_rg'
       Required = True
+      EditMask = '0\.000\.000;1;_'
       Size = 15
     end
     object tb_clientescli_endereco: TStringField
@@ -56,11 +58,13 @@ object DataModule1: TDataModule1
       FieldName = 'cli_celular'
       Origin = 'cli_celular'
       Required = True
+      EditMask = '!\(99\)00000-0000;1;_'
     end
     object tb_clientescli_cep: TStringField
       FieldName = 'cli_cep'
       Origin = 'cli_cep'
       Required = True
+      EditMask = '00\-000\-000;1;_'
       Size = 30
     end
     object tb_clientescli_bairro: TStringField
@@ -73,6 +77,7 @@ object DataModule1: TDataModule1
       FieldName = 'cli_cpf'
       Origin = 'cli_cpf'
       Required = True
+      EditMask = '000\.000\.000\-00;1;_'
       Size = 15
     end
     object tb_clientescli_cidade: TStringField
@@ -91,6 +96,7 @@ object DataModule1: TDataModule1
       FieldName = 'cli_data_cadast'
       Origin = 'cli_data_cadast'
       Required = True
+      EditMask = '!99/99/00;1;_'
     end
     object tb_clientescli_email: TStringField
       FieldName = 'cli_email'
@@ -102,11 +108,13 @@ object DataModule1: TDataModule1
       FieldName = 'cli_telefone'
       Origin = 'cli_telefone'
       Required = True
+      EditMask = '!\(99\)0000-0000;1;_'
     end
     object tb_clientescli_data_nasc: TDateField
       FieldName = 'cli_data_nasc'
       Origin = 'cli_data_nasc'
       Required = True
+      EditMask = '!99/99/00;1;_'
     end
     object tb_clientescli_situacao: TBooleanField
       FieldName = 'cli_situacao'

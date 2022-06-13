@@ -31,7 +31,7 @@ type
     tb_clientescli_email: TStringField;
     tb_clientescli_data_nasc: TDateField;
     tb_clientescli_data_cadast: TDateField;
-    tb_clientescli_situacao: TBooleanField;
+    tb_clientescli_situacao: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
@@ -46,11 +46,13 @@ implementation
 
 {%CLASSGROUP 'Vcl.Controls.TControl'}
 
+uses U_clientes, U_principal;
+
 {$R *.dfm}
 
 procedure TDataModule1.DataModuleCreate(Sender: TObject);
 begin
-Fdconnection1.Params.Database := 'sistemaclientes';
+Fdconnection1.Params.Database := 'sistema353';
 Fdconnection1.Params.UserName := 'root';
 Fdconnection1.Params.Password := '';
 
